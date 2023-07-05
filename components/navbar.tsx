@@ -6,7 +6,7 @@ import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
 import dynamic from "next/dynamic";
 
-
+export const revalidate = 0;
 const Navbar = async () => {
   const categories = await getCategories();
 
