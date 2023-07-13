@@ -4,8 +4,9 @@ import { ShoppingBag } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/button2";
 import useCart from "@/hooks/use-cart";
+import { ThemeToggle } from "./theme-toggle";
 
 const NavbarActions = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -32,6 +33,7 @@ const NavbarActions = () => {
           {cart.items.length}
         </span>
       </Button>
+      <ThemeToggle />
     </div>
   );
 }
