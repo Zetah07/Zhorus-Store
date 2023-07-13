@@ -33,7 +33,6 @@ const NavbarActions = () => {
           {cart.items.length}
         </span>
       </Button>
-      <ThemeToggle />
     </div>
   );
 }
